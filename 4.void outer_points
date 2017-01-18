@@ -1,0 +1,42 @@
+#include <iostream> 
+using namespace std; 
+
+void outer_points( int n, int m)
+{ 
+cin >> n >> m;
+int a[n]; 
+int b[n]; 
+int t[m];//точки
+int kolvootrezkov[m];
+
+for (int i = 0; i < n; i++) 
+{ 
+    cin >> a[i] >> b[i]; 
+} 
+
+for (int i = 0; i < m; i++) 
+{ 
+cin >> t[i];
+kolvootrezkov[i]=n;
+}
+for (int i = 0; i < m; i++) 
+{ 
+    for (int j=0; j<n; j++)
+     {
+         if( a[j]<=t[i] && t[i]<=b[j])
+         kolvootrezkov[i]--;
+    
+     }
+     
+} 
+for (int i = 0; i < m; i++) 
+{ 
+cout << kolvootrezkov[i] << " ";
+}
+}
+int main()
+{
+    int n,m;
+	outer_points( n, m);
+	return 0;
+}
