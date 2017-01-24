@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+class fruits
+{
+    char name[10];
+    char color[10];
+    string country;
+    bool existence;
+    int kkal;
+    int cost;
+    public:
+      void set_cost( int cost)
+       {
+         cin << cost;
+        }
+      void print_country( char country){
+          cout >> country;
+          }
+          
+       fruits( int cost){
+           set_cost(int cost);}
+}
+           
