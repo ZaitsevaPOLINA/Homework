@@ -1,0 +1,64 @@
+#include <iostream> 
+#include <string> 
+using namespace std; 
+
+typedef class pair_int { 
+int first; 
+int second; 
+public: 
+
+int get_first(){ 
+return first; 
+} 
+
+int get_second(){ 
+return second; 
+} 
+
+void set_first(int x){ 
+first=x; 
+} 
+
+void set_second(int x){ 
+second=x; 
+} 
+
+pair_int( int fir, int sec){ 
+first=fir; 
+second=sec; 
+} 
+
+pair_int (pair_int &a){ 
+first=a.get_first(); 
+second=a.get_second(); 
+} 
+void swap( pair_int a){ 
+int temp=first; 
+first=a.get_first(); 
+a.set_first(temp); 
+temp=second; 
+second=a.get_second(); 
+a.set_second(temp); 
+} 
+}pair_int; 
+
+bool operator==(pair_int a, pair_int b){ 
+if((a.get_first()==b.get_first()) && (a.get_second()==b.get_second())) 
+return true; 
+else return false; 
+} 
+bool operator!=(pair_int a, pair_int b){ 
+if(a == b) return false;// return !(a==b); 
+else return true; 
+} 
+
+
+
+int main(){ 
+pair_int a(10,12); 
+pair_int b(10,12); 
+b.set_first(25); 
+swap(a,b); 
+cout«(a.get_first()); 
+
+}
