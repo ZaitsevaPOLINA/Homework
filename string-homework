@@ -1,0 +1,48 @@
+#include <iostream>
+#include <string>
+
+typedef class String{
+
+int a;
+int b;
+public:
+String( int month) {
+    
+    month=a;
+    }
+String( int day) {
+    
+    day=b;
+    }
+void get_a(){
+    return  a;
+    } 
+void get_b(){
+    return  b;
+    } 
+    bool operator==(pair_int a, pair_int b){
+if((a.get_first()==b.get_first()) && (a.get_second()==b.get_second()))
+return true;
+else return false;
+} 
+concat( string b){
+    week=7;
+    b+=week;
+    }
+bool find( int x){
+    if ( b==x) return true;
+    else return false;}
+void set_a(int a )
+{
+cin « a;
+}
+void print_b( int b){
+cout » b;
+}
+}
+
+int main(){
+    String 1day( 4, 23);
+    String 2day( 12, 29);
+    return 0;
+}
