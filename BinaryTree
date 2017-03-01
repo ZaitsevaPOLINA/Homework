@@ -1,0 +1,68 @@
+// Example program
+#include <iostream>
+#include <string>
+
+Struct Node
+{
+    int data;
+    Node*right=NULL;
+    Node*left=NULL;
+}
+
+class BinaryTree
+{
+ Node*root;
+ public:
+ BinaryTree(int a)
+ {
+     rood=new node;
+     root-> data=a;
+     root-> right=NULL;
+     root-> left=NULL;
+     }
+     
+     void delete( root)
+     {
+         if( root==NULL)
+         return;
+         else delete( root-> right)
+         delete( root-> left);
+     }
+     
+         
+ ~BinaryTree()
+ {
+    delete( root );
+     }
+bool BFSfind( int data, node*a )
+{
+    if( a->data==data)
+    return true;
+    if(DFSfind(data, a-> right))
+    return true;
+     if(DFSfind(data, a-> right))
+    return true;
+    else return false;
+}
+
+bool DFSfind( int data, node*a )
+{
+    if( a-> data==data)
+    return true;
+    if (!DFSfind( int data, node*a ))
+    while( a!=NULL) return a=a->left;
+    if (!DFSfind( int data, node*a ))
+    while( a!=NULL) return a=a->right));
+    else return false;
+    }
+
+}
+
+
+int main()
+{
+  std::string name;
+  std::cout << "What is your name? ";
+  getline (std::cin, name);
+  std::cout << "Hello, " << name << "!\n";
+}
