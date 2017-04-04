@@ -1,0 +1,69 @@
+#include <iostream>
+#include <string>
+using namespace std;
+struct node{
+  string line;
+	 int number;
+ 	node*next;
+};
+
+class string_dict{
+	   node* head;
+     public: 
+
+string_dict(string line, int number){
+     head=new node;
+     head->line=l;
+     head->number=n;
+     head->next=NULL;
+    }
+    ~string_dict(){
+     while(head!=NULL){
+      node*temp=head;
+      head=head->next;
+      }
+      void push(string l, int n){
+     node*temp=new node;
+     temp->next=head;
+     temp->line=l;
+     temp->number=n;
+     head = temp;
+    }
+    int pop (string line; int number){
+    node*temp=head;
+    while( temp->next!=NULL){
+     temp=temp->next;
+     }
+    string l=temp->line;
+    int n=temp->number;
+    delete l;
+    delete n;
+    }
+    
+    int find(string a){
+     node*temp=head;
+     if(temp->next==NULL)
+      if(a==temp->line)
+       return temp->line
+       return temp->number;
+     while(temp->next!=NULL){
+      if(temp->line==a)
+       return temp->line
+       return temp->number;
+      temp= temp->next;
+     }
+     else
+     return -1;
+    }
+    };
+ int main(){
+    string= SPb;
+    A.line=SPb
+    int 10;
+    A.number=10;
+    if( find (A.string SPb))
+    pop (A.number=10);
+    if !( find (A.string SPb))
+    push (A.string SPb; A.number 10);
+ return 0;
+}
