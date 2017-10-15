@@ -1,0 +1,26 @@
+// Example program
+#include <iostream>
+#include <string>
+
+void dfs(int N1) {
+    if (was[N1]) return;
+    was[N1] = 1;
+    for (int i=0; i<gr[N1].size(); i++)
+        dfs(gr[N1][i]);
+}
+
+int main()
+{
+   int m,n;
+	cin >> n >> m;
+vector<vector<int> > gr(n); 
+for (int i=0; i<m; i++) {
+    cin >> N1 >> N2; 
+    gr[N1].push_back(N2);
+}
+int k;
+cin >> k;
+cout << dfs(k); 
+	return 0;
+
+}
