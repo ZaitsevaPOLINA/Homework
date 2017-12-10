@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+  for(j){
+  if(used[j]==0) {Q.push(j)};
+  Quenue<int>Q;
+  while(!Q.empty)
+  {int t=Q.pop();}
+  for(size_t i=0; i<g[v].size(); ++i) {
+				int to = g[v][i];
+        if(used[i]==0)
+          used[i]=3-used[t]
+          Q.push[i];
+          else if(used[i]==used[t])
+          return false;}
+          
+}
+return true
+}
